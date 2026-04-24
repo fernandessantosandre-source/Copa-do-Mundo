@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copa do Mundo - Exercício</title>
+    <style>
+        /* 8. Estilização Geral */
+        body {
+            background-color: lightblue;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 40px;
+        }
+
+        /* 1. Título Principal */
+        h1 {
+            text-align: center;
+            color: #003399; /* Azul Royal */
+            font-size: 36px;
+        }
+
+        /* 2. Parágrafo Introdutório */
+        .intro {
+            text-align: justify;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.2); /* Fundo sutil para leitura */
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        /* 3. Lista de Seleções Favoritas */
+        ul.selecoes-fav {
+            color: yellow;
+            font-weight: bold;
+        }
+
+        /* 4. Tabela de Seleções */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+            text-align: center;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 2px solid #333;
+        }
+        th, td {
+            padding: 10px;
+        }
+
+        /* 5. Imagens */
+        img {
+            width: 200px;
+            border-radius: 20px;
+            margin: 10px;
+        }
+
+        /* 6. Cultura dos Países */
+        .cultura-secao {
+            border: 2px solid #003399; /* Borda em uma seção */
+            padding: 15px;
+            margin-top: 20px;
+        }
+        .cultura-secao h2 {
+            color: darkblue;
+        }
+        .cultura-secao p {
+            font-style: italic;
+        }
+
+        /* 7. Culinária Típica */
+        .culinaria-secao h2 {
+            color: darkblue;
+        }
+        .culinaria-lista {
+            list-style-type: square;
+            color: orange;
+        }
+
+        /* Efeito Hover (8) */
+        .hover-text:hover {
+            color: red;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        /* Desafio EXTRA - Botão */
+        .btn-saiba-mais {
+            background-color: #003399;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.4s;
+        }
+        .btn-saiba-mais:hover {
+            background-color: #00cc44; /* Muda para verde ao passar o mouse */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 1. Título -->
+    <h1>Copa do Mundo de Futebol</h1>
+
+    <!-- 2. Introdução -->
+    <div class="intro">
+        <p>A Copa do Mundo FIFA é o maior evento de futebol do planeta, reunindo seleções de todos os continentes em uma disputa emocionante pelo título de campeão mundial. O torneio acontece de quatro em quatro anos, parando o mundo para assistir aos melhores jogadores da atualidade defendendo as cores de suas nações.</p>
+    </div>
+
+    <!-- 3. Seleções Favoritas -->
+    <h2 class="hover-text">Minhas Seleções Favoritas</h2>
+    <ul class="selecoes-fav">
+        <li>Brasil</li>
+        <li>Argentina</li>
+        <li>França</li>
+        <li>Alemanha</li>
+    </ul>
+
+    <!-- 4. Tabela -->
+    <table>
+        <thead>
+            <tr>
+                <th>País</th>
+                <th>Continente</th>
+                <th>Títulos</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Brasil</td>
+                <td>América do Sul</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>Alemanha</td>
+                <td>Europa</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>Itália</td>
+                <td>Europa</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>Argentina</td>
+                <td>América do Sul</td>
+                <td>3</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- 5. Imagens -->
+    <div>
+        <img src="Brasil.jgp.jfif" alt="Bandeira do Brasil">
+        <img src="Argentina.jgp.jfif" alt="Bandeira da Argentina">
+        <img src="fraça.jgp.jfif" alt="Bandeira da França">
+    </div>
+
+    <!-- 6. Cultura -->
+    <section class="cultura-secao">
+        <h2>Cultura dos Países</h2>
+        <p><strong>Brasil:</strong> O Samba é a alma do país, refletindo a alegria e a diversidade do povo brasileiro.</p>
+        <p><strong>Argentina:</strong> O Tango é uma dança passional e dramática que nasceu nos bairros de Buenos Aires.</p>
+        <p><strong>França:</strong> A cultura francesa é marcada pela sofisticação artística e a importância histórica da moda e filosofia.</p>
+    </section>
+
+    <!-- 7. Culinária -->
+    <section class="culinaria-secao">
+        <h2>Culinária Típica</h2>
+        <ul class="culinaria-lista">
+            <li>Feijoada (Brasil)</li>
+            <li>Empanadas (Argentina)</li>
+            <li>Croissant (França)</li>
+            <li>Pretzel (Alemanha)</li>
+        </ul>
+    </section>
+
+    <!-- 8. Desafio EXTRA -->
+    <div style="text-align: center; margin-top: 30px;">
+        <button class="btn-saiba-mais">Saiba mais sobre a Copa</button>
+    </div>
+
+</body>
+</html>
